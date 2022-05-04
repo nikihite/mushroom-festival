@@ -12,26 +12,26 @@ let mushroomCount = 3;
 
 const friendData = [
     {
-        name: 'Erich',
+        name: 'Tyrone',
         satisfaction: 2,
     },
     {
-        name: 'Sarah',
+        name: 'Austin',
         satisfaction: 3,
     },
     {
-        name: 'Missael',
+        name: 'Tasha',
         satisfaction: 1,
     },
     {
-        name: 'Soraya',
+        name: 'Niki',
         satisfaction: 2,
     },
 ];
 
 addMushroomButton.addEventListener('click', () => {
     if (Math.random() > 0.5) {
-        alert('found a mushroom!🍄🍄🍄');
+        alert('found one🍄🍄🍄!!');
 
         mushroomCount++;
         displayMushrooms();
@@ -68,7 +68,7 @@ function displayFriends() {
         //             then display your friends and mushrooms with the updated state
         friendElList.addEventListener('click', () => {
             if (mushroomCount === 0) {
-                alert('You are all out of mushrooms, Go find more!!');
+                alert('You are all out of mushrooms, go find more!!');
             } else if (mushroomCount > 0 && friend.satisfaction < 3) {
                 friend.satisfaction++;
                 mushroomCount--;
