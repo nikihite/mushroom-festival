@@ -44,7 +44,7 @@ addFriendButton.addEventListener('click', () => {
     // get the name from the input
     const friendName = friendInputEl.value;
     // create a new friend object
-    const newFriend = {name: friendName, satisfaction: 1 };
+    const newFriend = { name: friendName, satisfaction: 1 };
     // push it into the friends state array, passed in as an argument
     friendData.push(newFriend);
     // reset the input
